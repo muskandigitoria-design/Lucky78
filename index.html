@@ -6,91 +6,116 @@
     <title>Lucky Matka Tips Official</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            font-family: 'Outfit', sans-serif;
+            background-color: #0a0a0a; /* Pure Dark Background */
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+            color: #ffffff;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        /* Subtle moving glow in the background */
+        .bg-glow {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: rgba(234, 179, 8, 0.1);
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: -1;
         }
 
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .premium-card {
+            background: rgba(25, 25, 25, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
 
-        .pulse-animation {
-            animation: pulse 2s infinite;
+        .gold-text {
+            background: linear-gradient(to right, #fde047, #ca8a04);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
-            70% { transform: scale(1.03); box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+        .btn-gold-pulse {
+            background: linear-gradient(45deg, #eab308, #854d0e);
+            animation: goldPulse 2s infinite;
+        }
+
+        @keyframes goldPulse {
+            0% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(234, 179, 8, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); }
+        }
+
+        .chip {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-6">
+<body class="min-h-screen flex items-center justify-center p-5">
 
-    <div class="glass-effect w-full max-w-sm rounded-[2.5rem] p-8 shadow-2xl flex flex-col items-center text-center">
+    <div class="bg-glow"></div>
+
+    <div class="premium-card w-full max-w-sm rounded-[3rem] p-8 text-center flex flex-col items-center">
         
-        <div class="relative mb-6">
-            <div class="w-32 h-32 rounded-full border-4 border-yellow-500 p-1 shadow-inner bg-white overflow-hidden">
+        <div class="relative mb-8">
+            <div class="w-36 h-36 rounded-full border-2 border-yellow-500/50 p-1.5 bg-black shadow-[0_0_20px_rgba(234,179,8,0.3)]">
                 <img src="https://oneonone.sbs/wp-content/uploads/2026/02/uyrs.jpg" alt="Official Logo" class="w-full h-full object-cover rounded-full">
             </div>
-            <div class="absolute -bottom-2 right-2 bg-yellow-400 text-white rounded-full p-1 shadow-lg border-2 border-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            <div class="absolute bottom-1 right-3 bg-yellow-500 text-black rounded-full p-1 shadow-lg border-2 border-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
             </div>
         </div>
 
-        <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight">Lucky Matka Tips Official</h1>
-        <div class="mt-1 flex items-center justify-center space-x-2 text-blue-600 font-semibold text-sm">
-            <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-ping"></span>
-            <span>5,135 Active Subscribers</span>
+        <h1 class="text-2xl font-extrabold tracking-tight text-white mb-1">
+            Lucky Matka <span class="gold-text">Tips Official</span>
+        </h1>
+        <div class="flex items-center gap-2 justify-center mb-6">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+            <span class="text-gray-400 text-sm font-medium tracking-wide">5,135 SUBSCRIBERS</span>
         </div>
 
-        <hr class="w-16 border-b-2 border-yellow-500 my-5 rounded-full">
-
-        <div class="space-y-4">
-            <p class="text-lg font-bold text-gray-800 leading-snug">
+        <div class="space-y-4 mb-8">
+            <p class="text-lg font-semibold text-white">
                 आपका भाग्य यहीं से शुरू होता है! 🔮
             </p>
-            <p class="text-gray-600 text-sm font-medium">
+            <p class="text-gray-400 text-sm px-4">
                 रोज़ाना सटीक मटका टिप्स और ट्रिक्स के लिए जॉइन करें! 🎯
             </p>
 
             <div class="grid grid-cols-2 gap-2 mt-4">
-                <div class="bg-gray-100 text-gray-700 py-1.5 px-2 rounded-lg text-xs font-bold border border-gray-200">#FARIDABAD</div>
-                <div class="bg-gray-100 text-gray-700 py-1.5 px-2 rounded-lg text-xs font-bold border border-gray-200">#GHAZIABAD</div>
-                <div class="bg-gray-100 text-gray-700 py-1.5 px-2 rounded-lg text-xs font-bold border border-gray-200">#GALI</div>
-                <div class="bg-gray-100 text-gray-700 py-1.5 px-2 rounded-lg text-xs font-bold border border-gray-200">#DISAWAR</div>
+                <div class="chip py-2 rounded-xl text-[10px] font-bold text-yellow-500 tracking-tighter uppercase">#FARIDABAD</div>
+                <div class="chip py-2 rounded-xl text-[10px] font-bold text-yellow-500 tracking-tighter uppercase">#GHAZIABAD</div>
+                <div class="chip py-2 rounded-xl text-[10px] font-bold text-yellow-500 tracking-tighter uppercase">#GALI</div>
+                <div class="chip py-2 rounded-xl text-[10px] font-bold text-yellow-500 tracking-tighter uppercase">#DISAWAR</div>
             </div>
+        </div>
 
-            <p class="text-sm italic text-gray-500 px-2 mt-4">
-                🌟 "मटका के बादशाह बनें! 🔥 जीत की गारंटी! 🚀 सिर्फ़ भरोसेमंद और लाइव टिप्स।"
+        <div class="w-full">
+            <a href="https://t.me/+o-su4CbXogA5ZmQ9" class="btn-gold-pulse block w-full py-4 text-black font-black text-xl rounded-2xl transition-transform active:scale-95 shadow-2xl uppercase tracking-tighter">
+                JOIN CHANNEL NOW
+            </a>
+            
+            <p class="mt-5 text-[10px] text-gray-500 font-bold italic opacity-80">
+                🌟 "मटका के बादशाह बनें! हर दिन जीत की गारंटी!"
             </p>
         </div>
 
-        <div class="w-full mt-8">
-            <a href="https://t.me/+o-su4CbXogA5ZmQ9" class="pulse-animation block w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg rounded-2xl transition-all shadow-lg">
-                JOIN OUR CHANNEL
-            </a>
-            <div class="mt-4 flex items-center justify-center space-x-1 text-[10px] text-gray-400 font-bold uppercase tracking-widest">
-                <span>Safe</span>
-                <span>•</span>
-                <span>Secure</span>
-                <span>•</span>
-                <span>Verified</span>
+        <div class="mt-6 flex justify-center gap-4 border-t border-white/5 pt-4 w-full">
+            <div class="flex items-center gap-1 text-[9px] text-gray-500 font-bold uppercase tracking-widest">
+                <span class="text-green-500 text-lg">•</span> LIVE TIPS
+            </div>
+            <div class="flex items-center gap-1 text-[9px] text-gray-500 font-bold uppercase tracking-widest">
+                <span class="text-yellow-500 text-lg">•</span> TRUSTED
             </div>
         </div>
 
